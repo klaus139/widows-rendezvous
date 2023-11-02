@@ -1,10 +1,19 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Layout from './components/layout/Layout';
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>this </h1>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Layout />}>
+      
+
+    </Route>
+   </Routes>
+   </BrowserRouter>
   );
 }
 
